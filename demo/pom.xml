@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+        <!--如果导入其他的starters，放心的省略版本号-->
+    </parent>
+    <groupId>com.nearu</groupId>
+    <artifactId>demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>demo</name>
+    <description>Demo project for Spring Boot of near u</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <!--覆盖属性来覆盖个别的依赖-->
+        <!--<spring-data-releasetrain.version>Fowler-SR2</spring-data-releasetrain.version>-->
+    </properties>
+
+    <!--<dependencyManagement>-->
+        <!--<dependencies>-->
+            <!--&lt;!&ndash; Override Spring Data release train provided by Spring Boot &ndash;&gt;-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.data</groupId>-->
+                <!--<artifactId>spring-data-releasetrain</artifactId>-->
+                <!--<version>Fowler-SR2</version>-->
+                <!--<scope>import</scope>-->
+                <!--<type>pom</type>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-dependencies</artifactId>-->
+                <!--<version>1.4.1.BUILD-SNAPSHOT</version>-->
+                <!--<type>pom</type>-->
+                <!--<scope>import</scope>-->
+            <!--</dependency>-->
+        <!--</dependencies>-->
+    <!--</dependencyManagement>-->
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
